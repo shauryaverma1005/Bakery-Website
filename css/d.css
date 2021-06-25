@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: url('https://dl.dropbox.com/s/mpmu0gjtxv2x3fs/Webp.net-resizeimage%20%281%29.jpg?raw=1') no-repeat center center fixed;
+}
+
+#first {
+  text-align: center;
+}
+
+.abc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+   background-size: cover;
+  min-height: 100vh;
+}
+.container1 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.container1 .card1 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.container1 .card1 .content1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.container1 .card1:hover .content1 {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.container1 .card1 .content1 .imgBx1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.container1 .card1 .content1 .imgBx1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container1 .card1 .content1 .contentBx1 h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.container1 .card1 .content1 .contentBx1 h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.container1 .card1 .sci1 {
+  position: absolute;
+  display: flex;
+  bottom: 50px;
+}
+
+.container1 .card1 .sci1 li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.container1 .card1 .sci1 li a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.container1 .card1:hover .sci1 li {
+  transform: translateY(0);
+  opacity: 1;
+}
+.container1 .card1 .sci1 li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.container1 .card1 .sci1 li:nth-child(3) {
+  transition-delay: 0.2s;
+}
